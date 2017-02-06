@@ -3,7 +3,7 @@ class sudo {
 		ensure => present,
 	}
 
-	if $operatingsystem == "Debian" {
+	if $operatingsystem == "CentOS" {
 		package { "sudo-ldap":
 			ensure => present,
 			require => Package["sudo"],
